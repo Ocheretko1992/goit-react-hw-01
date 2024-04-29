@@ -1,4 +1,6 @@
-export default function FriendListItem({ friends: { avatar, name, isOnline }}) {
+export default function FriendListItem({
+  friends: {avatar,name,isOnline},
+}) {
   return (
     <div>
       <img src={avatar} alt="Avatar" width="48" />

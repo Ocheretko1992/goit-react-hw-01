@@ -1,7 +1,8 @@
 import userData from "../../userData.json";
 import Profile from "../../components/Profile/Profile";
-import friends from "../../friends.json"
-import FriendList from "../FriendList/FriendList"
+
+import friends from "../../friends.json";
+import FriendList from "../FriendList/FriendList";
 
 export default function App() {
   return (
