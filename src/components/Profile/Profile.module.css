@@ -1,0 +1,46 @@
+.phather {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.children {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  font-size: 17px;
+  letter-spacing: 0.02em;
+  width: 350px;
+}
+
+.descendantImg {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.descendantParagraf{
+    margin: 0;
+}
+
+.descendantUl {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.descendantLi {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  align-items: center;
+}
+
+.descendantNumber {
+  font-family: sans-serif;
+}

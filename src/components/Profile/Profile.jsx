@@ -1,3 +1,5 @@
+import css from '../Profile/Profile.module.css';
+
 export default function Profile({
   image,
   name,
@@ -6,30 +8,30 @@ export default function Profile({
   stats: { followers, views, likes },
 }) {
   return (
-    <div>
-      <div>
-        <img src={image} alt="User avatar" />
-        <p>{name}</p>
-        <p>{tag}</p>
-        <p>{location}</p>
-      </div>
+    <div className={css.phather}>
+      <div className={css.children}>
+        <img className={css.descendantImg} src={image} alt="User avatar" />
+        <p className={css.descendantParagraf}>{name}</p>
+        <p className={css.descendantParagraf}>{tag}</p>
+        <p className={css.descendantParagraf}>{location}</p>
 
-      {
-        <ul>
-          <li>
-            <span>Followers</span>
-            <span>{followers}</span>
-          </li>
-          <li>
-            <span>Views</span>
-            <span>{views}</span>
-          </li>
-          <li>
-            <span>Likes</span>
-            <span>{likes}</span>
-          </li>
-        </ul>
-      }
+        {
+          <ul className={css.descendantUl}>
+            <li className={css.descendantLi}>
+              <span>Followers</span>
+              <span className={css.descendantNumber}>{followers}</span>
+            </li>
+            <li className={css.descendantLi}>
+              <span>Views</span>
+              <span className={css.descendantNumber}>{views}</span>
+            </li>
+            <li className={css.descendantLi}>
+              <span>Likes</span>
+              <span className={css.descendantNumber}>{likes}</span>
+            </li>
+          </ul>
+        }
+      </div>
     </div>
   );
 }
