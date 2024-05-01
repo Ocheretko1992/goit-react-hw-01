@@ -1,9 +1,11 @@
+import css from './TransactoinItem.module.css'
+
 export default function TransactionItem({ item: { type, amount, currency } }) {
   return (
     <>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
+      <td className={css.lineitem}>{type}</td>
+      <td className={css.lineitem}>{amount}</td>
+      <td className={css.lineitem}>{currency}</td>
     </>
   );
 }
